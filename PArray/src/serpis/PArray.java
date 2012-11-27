@@ -10,8 +10,12 @@ public class PArray {
 		// TODO Auto-generated method stub
 		int[] v1 = new int[] {5, 17, 15, 10, 3, 9};
 		int m1 = menor (v1);
+		
 		System.out.println( "m1 = " + m1);
 
+		int pos = posicionDe (v1, m1);
+		System.out.println("pos = " + pos);
+		
 	}
 
 	private static int menor (int[] v){
@@ -47,4 +51,9 @@ public class PArray {
 		
 		return m;
 	}
+	
+	private static int posicionDe (int[] v, int x) {
+		return v[x];
+	}
+	
 }
