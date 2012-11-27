@@ -16,7 +16,7 @@ public class Adivina {
 		Random random= new Random();
 		int numeroAleatorio= random.nextInt(1000) + 1;
 		
-		System.out.println("numeroAleatorio="+numeroAleatorio);
+		System.out.println("numeroAleatorio = " + numeroAleatorio);
 		
 
 		int numeroUsuario, contadorIntentos;
