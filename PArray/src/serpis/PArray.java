@@ -8,21 +8,36 @@ public class PArray {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] v1 = new int[] {5, 17, 15, 10, 3, 9};
-		int m1 = menor (v1);
+		int[] v = new int[] {5, 17, 15, 10, 3, 9};
+		int m = menor (v);
 		
-		System.out.println( "m1 = " + m1);
-
-		int pos = posicionDe (v1, m1);
+		int pos = posicionDe (v ,3); 
+		System.out.println( "m1 = " + m);
 		System.out.println("pos = " + pos);
-		
+
+			
 	}
 
+	public static int posicionDe (int [] v , int x) {
+		
+		int cont = v.length;
+		int index = 0;
+		
+		
+		while (index < cont && v[index] != x){
+			index ++;
+		}
+		return index == cont ? -1 : index;
+				
+	}
+	
 	private static int menor (int[] v){
 		int m = v[0];
-		for (int index = 1; index < v.length; index ++)
+		for (int index = 0; index < v.length; index ++)
 			if (v[index] < m)
 				m = v [index];
+			
+
 		/*
 		int index = 1;
 		while (index < v.length){
@@ -32,6 +47,7 @@ public class PArray {
 		}
 		*/
 		return m;
+		
 	}
 	
 	private static int menorBis (int[] v){
@@ -50,10 +66,8 @@ public class PArray {
 				m = item;
 		
 		return m;
+	
 	}
 	
-	private static int posicionDe (int[] v, int x) {
-		return v[x];
-	}
 	
 }
