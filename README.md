@@ -1,2 +1,2 @@
-ED
+ED Almacen remoto de clase
 ==
