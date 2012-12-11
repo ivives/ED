@@ -31,7 +31,7 @@ public class PArray {
 				
 	}
 	
-	private static int menor (int[] v){
+	public static int menor (int[] v){
 		int m = v[0];
 		for (int index = 0; index < v.length; index ++)
 			if (v[index] < m)
@@ -50,7 +50,7 @@ public class PArray {
 		
 	}
 	
-	private static int menorBis (int[] v){
+	/*private static int menorBis (int[] v){
 		int posicionMenor = 0;
 		for (int index = 1; index < v.length; index ++)
 			if (v[index] < v[posicionMenor])
@@ -67,7 +67,7 @@ public class PArray {
 		
 		return m;
 	
-	}
+	}*/
 	
 	
 }
