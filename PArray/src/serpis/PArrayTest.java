@@ -22,7 +22,6 @@ public class PArrayTest {
 		
 		pos = PArray.posicionDe(v1, 9);
 		Assert.assertEquals(5, pos);
-		
 		int[] v2 = new int[]{};
 		pos = PArray.posicionDe(v1, 77);
 		Assert.assertEquals(-1, pos);
